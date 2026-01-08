@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math 307 - Linear Algebra Lab Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .activity-grid {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+        .activity-card {
+            transition: var(--transition);
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            text-decoration: none;
+            color: inherit;
+        }
+        .activity-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 40px -10px var(--primary-glow);
+        }
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .card-number {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--primary);
+            font-weight: 700;
+        }
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #FFF 0%, var(--text-muted) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <div class="badge">MATH 307</div>
+            <h1>Linear Algebra Labs</h1>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">
+                Welcome to your online companion hub. Explore interactive visualizations designed to clarify the core concepts of linear algebra.
+            </p>
+        </header>
+
+        <section class="grid activity-grid">
+            <a href="activity1.html" class="glass-card activity-card">
+                <span class="card-number">Activity 01</span>
+                <h3>Systems & Vector Equations</h3>
+                <p style="font-size: 0.875rem; color: var(--text-muted);">Visualize the Row and Column pictures of linear systems.</p>
+                <div class="card-icon">📐</div>
+            </a>
+
+            <a href="activity2.html" class="glass-card activity-card">
+                <span class="card-number">Activity 02</span>
+                <h3>Linear Transformations</h3>
+                <p style="font-size: 0.875rem; color: var(--text-muted);">Explore rotations, shears, and reflections in 2D space.</p>
+                <div class="card-icon">🔄</div>
+            </a>
+
+            <a href="activity3.html" class="glass-card activity-card">
+                <span class="card-number">Activity 03</span>
+                <h3>Matrix Operations</h3>
+                <p style="font-size: 0.875rem; color: var(--text-muted);">Understand inner products, outer products, and determinants.</p>
+                <div class="card-icon">✖️</div>
+            </a>
+
+            <a href="activity4.html" class="glass-card activity-card">
+                <span class="card-number">Activity 04</span>
+                <h3>Eigenstuff</h3>
+                <p style="font-size: 0.875rem; color: var(--text-muted);">Watch the Power Method converge on dominant eigenvectors.</p>
+                <div class="card-icon">📈</div>
+            </a>
+
+            <a href="activity5.html" class="glass-card activity-card">
+                <span class="card-number">Activity 05</span>
+                <h3>Robot Claw (PCA)</h3>
+                <p style="font-size: 0.875rem; color: var(--text-muted);">Apply eigenvectors to orient a robotic claw using PCA.</p>
+                <div class="card-icon">🤖</div>
+            </a>
+
+            <a href="activity6.html" class="glass-card activity-card">
+                <span class="card-number">Activity 06</span>
+                <h3>Orthogonal Projections</h3>
+                <p style="font-size: 0.875rem; color: var(--text-muted);">Find the best approximation using the Normal Equations.</p>
+                <div class="card-icon">🎯</div>
+            </a>
+
+            <a href="activity7.html" class="glass-card activity-card">
+                <span class="card-number">Activity 07</span>
+                <h3>Gram-Schmidt Process</h3>
+                <p style="font-size: 0.875rem; color: var(--text-muted);">Build orthonormal bases step-by-step.</p>
+                <div class="card-icon">🔨</div>
+            </a>
+
+            <a href="activity8.html" class="glass-card activity-card">
+                <span class="card-number">Activity 08</span>
+                <h3>Least Squares</h3>
+                <p style="font-size: 0.875rem; color: var(--text-muted);">Solve real-world problems with data curve fitting.</p>
+                <div class="card-icon">✨</div>
+            </a>
+        </section>
+
+        <footer style="margin-top: 5rem; text-align: center; color: var(--text-muted); font-size: 0.875rem;">
+            &copy; 2026 Milligan University Department of Mathematics
+        </footer>
+    </div>
+</body>
+</html>
